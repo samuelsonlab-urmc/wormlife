@@ -1,5 +1,5 @@
-#README
-##WormLife V0.4
+# README
+## WormLife V0.4
 
 Copyright (C) 2017  Jesse Llop (original code), Adam Cornwell (maintainer).
 Samuelson Lab, University of Rochester Medical Center, Dept. Biomedical Genetics.
@@ -10,15 +10,15 @@ Samuelson Lab, University of Rochester Medical Center, Dept. Biomedical Genetics
 **Software website/repository:** https://github.com/samuelsonlab-urmc/wormlife
 **Lab website:** https://www.urmc.rochester.edu/labs/andrew-samuelson.aspx
 
-###Relevant publications:
+### Relevant publications:
 Coming soon!
 
-###Overview:
+### Overview:
 WormLife implements functionality and tools for analysis of Replica-Set-style survival experiments in C elegans. Kaplan-Meier style analyses are also supported. Current functionality (first public release, V0.4) includes the ability to plot survival curves through a GUI for both Replica Set Method experiments and "traditional" Kaplan-Meier experiments. Functionality is also available, through scripting in R, for statistical comparisons of groups from Replica Set data.
 Future plans for this software include development of a web-based interface, to provide an easier option to get started with.
 
 
-###WormLife Setup/Installation:
+### WormLife Setup/Installation:
 
 1) Start by downloading the release zip file for the current release at https://github.com/samuelsonlab-urmc/wormlife. The most up-to-date documentation for the software can be found at the GitHub page. The following installation instructions will work for systems running Mac OS/Mac OS X and Linux. Other platforms may be suitable, but have not been extensively tested. Start by extracting the WormLife zip file to a folder.
 
@@ -33,7 +33,7 @@ Future plans for this software include development of a web-based interface, to 
 6) Install the R package tkrplot. Open R, which should now be installed. A graphical interface should load, with a large console area. At the bottom of this console area, input “install.packages("tkrplot")” to install the tkrplot package. After the install process is finished, test loading by trying the command “library(tkrplot)” in the console. If successful, no error will be returned.
 
 
-###Starting WormLife: 
+### Starting WormLife: 
 
 1) If tkrplot was able to load successfully, the WormLife plotting interface should be able to load. Find the location of the “code” directory in the folder extracted from the zip file. For example, if the file was extracted on the Desktop, the path might be “/Users/UserName /Desktop/WormLife/code”.
 
