@@ -2,6 +2,7 @@
 ## WormLife V0.4
 
 Copyright (C) 2017  Jesse Llop (original code), Adam Cornwell (maintainer).
+
 Samuelson Lab, University of Rochester Medical Center, Dept. Biomedical Genetics.
 
 **License:** GNU GPL3. See LICENSE.txt for additional details.
