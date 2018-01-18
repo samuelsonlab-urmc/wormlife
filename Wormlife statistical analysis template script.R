@@ -31,13 +31,13 @@ set.seed(0123456)
 
 ## Set location of WormLife Plottool folder
 ### Note: R always uses "/" to delineate folders, even on Windows.
-wlDir <- "/Users/acornwell1/Desktop/analysis/wormlab/wormlife/ptool"
+wlDir <- "/SET_FOLDER_LOCATION/WormLife_0.4"
 
 ## Set location of desired data file
 ### This is the APPROPRIATELY FORMATTED AND FILTERED file with 
 ### the data to run statistics on
 ### The default here is the example file.
-dataFile <- "/Users/acornwell1/Desktop/analysis/wormlab/wormlife/ptool/example_data/Table S1- Example replica set survival data.csv"
+dataFile <- file.path(wlDir, "example_data", "Table S1- Example replica set survival data.csv")
 
 ## Specify columns in data file
 ### Specify which columns in the data file correspond to which of the required columns
@@ -57,7 +57,7 @@ col.total <- "total_num"
 ### where both strain and treatment are from the input data file. You will be informed if names do not match.
 ### If set to NA then all possible comparisons will be run
 #compFile <- NA
-compFile <- "/Users/acornwell1/Desktop/analysis/wormlab/wormlife/ptool/example_data/comps_rsm_example.csv"
+compFile <- file.path(wlDir, "example_data", "comps_rsm_example.csv")
 
 ## Output directory
 ### Set the path of the folder to write output files to
@@ -93,11 +93,10 @@ nCores <- NA
 #=======================================================================================
 
 # ----------  READ IN CODE FILES ----------
-invisible(sapply(file.path(wlDir, "modeling", 
+invisible(sapply(file.path(wlDir, "code",
                  c("ld50.R", "logit.R", "maxday.R", "models.R",
-                   "tabline.R", "wormCompare.R", "test_logit_parallel.R")), source))
-invisible(sapply(file.path(wlDir, "tools", c("generic_tools.R", "modelData.R")), source))
-source(file.path(wlDir, "plotting", "points.R"))
+                   "tabline.R", "wormCompare.R", "test_logit_parallel.R",
+                   "generic_tools.R", "modelData.R", "plotting.R", "points.R")), source))
 
 # ----------  READ IN AND CHECK DATA FILES ----------
 data_table <- read.csv(dataFile, header = TRUE, row.names = NULL, stringsAsFactors = FALSE)
