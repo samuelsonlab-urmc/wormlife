@@ -9,10 +9,11 @@ Samuelson Lab, University of Rochester Medical Center, Dept. Biomedical Genetics
 
 
 **Software website/repository:** https://github.com/samuelsonlab-urmc/wormlife
+
 **Lab website:** https://www.urmc.rochester.edu/labs/andrew-samuelson.aspx
 
 ### Relevant publications:
-Coming soon!
+Cornwell, Adam B., et al. "The replica set method: a high-throughput approach to quantitatively measure Caenorhabditis elegans lifespan." JoVE (Journal of Visualized Experiments) 136 (2018): e57819. https://www.jove.com/t/57819/the-replica-set-method-high-throughput-approach-to-quantitatively
 
 ### Overview:
 WormLife implements functionality and tools for analysis of Replica-Set-style survival experiments in C elegans. Kaplan-Meier style analyses are also supported. Current functionality (first public release, V0.4) includes the ability to plot survival curves through a GUI for both Replica Set Method experiments and "traditional" Kaplan-Meier experiments. Functionality is also available, through scripting in R, for statistical comparisons of groups from Replica Set data.
